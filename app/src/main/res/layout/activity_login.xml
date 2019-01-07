@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="id.co.mkamal.mkamalmobile.activity_client.LoginActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"/>
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/jdl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_above="@+id/loginlayout"
+    android:layout_marginBottom="0dp">
+    <TextView
+        android:id="@+id/loginjudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:layout_marginRight="5dp"
+        android:text="Login Aplikasi"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"/>
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/loginlayout"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:background="@drawable/login"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:orientation="vertical"
+    android:padding="30dp"
+    >
+    <EditText
+        android:id="@+id/idlogin"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Username"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:paddingRight="10dp"
+        android:drawableRight="@drawable/ic_username"/>
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <EditText
+                android:id="@+id/passwordlogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="40dp"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Password"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:inputType="textPassword"/>
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_password"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:text="Login"
+        android:background="@drawable/btn_login"
+        android:textColor="@android:color/white"
+        />
+    <!--<Button-->
+        <!--android:id="@+id/btnloginpengacara"-->
+        <!--android:layout_width="220dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:fontFamily="sans-serif"-->
+        <!--android:text="Login"-->
+        <!--android:background="#FFF"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--/>-->
+</LinearLayout>
+
+</RelativeLayout>

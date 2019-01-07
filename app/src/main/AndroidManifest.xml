@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.co.mkamal.mkamalmobile">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity_client.IndexActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity_client.LoginActivity" />
+        <activity
+            android:name=".activity_client.HomeClientActivity"
+            android:label="@string/title_activity_home_client"
+            android:theme="@style/AppAfterLogin" />
+        <activity android:name=".activity_client.DetailKasusActivity" />
+        <activity
+            android:name=".activity_pengacara.HomePengacaraActivity"
+            android:label="@string/title_activity_home_pengacara"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity_pengacara.DetailKasusPengacaraActivity" />
+        <activity android:name=".activity_pengacara.EditKasusActivity" />
+        <activity android:name=".activity_pengacara.LihatKegiatanActivity" />
+        <activity android:name=".activity_pengacara.EditKegiatanActivity" />
+        <activity android:name=".activity_pengacara.TambahKasusActivity" />
+        <activity android:name=".activity_pengacara.TambahKegiatanActivity"></activity>
+    </application>
+
+</manifest>

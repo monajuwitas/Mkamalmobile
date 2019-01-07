@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    tools:context="id.co.mkamal.mkamalmobile.fragment.KegiatanFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgkegiatan"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorPrimary"/>
+        <ImageView
+            android:id="@+id/logokasus"
+            android:src="@drawable/palukasus1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/tvdftarkegiatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f4b006"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/logokasus"
+            android:text="Daftar Kegiatan"/>
+
+        <Button
+            android:id="@+id/tambahkasus"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:textSize="40dp"
+            android:background="@drawable/btn_add"
+            android:layout_toRightOf="@id/tvdftarkegiatan"
+            android:text="+"
+            android:textColor="@android:color/white"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerviewkegiatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/imgkegiatan">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+
+</FrameLayout>
